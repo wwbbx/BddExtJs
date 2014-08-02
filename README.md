@@ -39,7 +39,15 @@ Prepare:
        
         npm -g install grunt-cli
         
-TODO:
+Notes:
+
+    1. If you used WebStorm, please setup coffee watch arguments like:
+        --map --compile --output $ProjectFileDir$\test\spec\js $ProjectFileDir$\test\spec\coffee
+        
+TODOs:
+
     1. using cucumberjs
+    
     2. using sinon.js
+    
     3. using deftjs for dependency injection
