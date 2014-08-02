@@ -4,6 +4,8 @@
 
 describe 'Use Ext Js 5 Tests', ->
   it 'should be able to create Ext object', ->
+    debugger
     main = Ext.create('BddExtJs.view.main.Main')
 
-    main.should.not.be('undefined')
+    main.title = 'grunt test'
+    expect(main.title).toBe('grunt test')

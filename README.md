@@ -93,6 +93,12 @@ WebStorm Tips:
             
         The good part for Mocha is that it has test tree displayed.
         
+How to debug:
+
+    1. I can use JavaScript Debugger to host SpecRunner.html. It will use bootstrap.js to load
+       ext js source code and application and test code.
+       Then I can put "debugger" in test case to do the debugging.
+        
 Next Step:
 
     1. how to use sinon.js
