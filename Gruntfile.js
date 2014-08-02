@@ -13,10 +13,10 @@ module.exports = function (grunt) {
                 ],
                 options: {
                     specs: [
-                        'test/spec/js/*.js',
-                        'test/spec/js/**/*.js'
+                        'test/js/grunt/*.js',
+                        'test/js/grunt/**/*.js'
                     ],
-                    helpers: 'test/example/spec/SpecHelper.js',
+                    //helpers: 'test/example/spec/SpecHelper.js',
                     display: 'full',
                     summary: true
                 }
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
 
             },
             spec: {
-                files: 'test/spec/**/*.js',
+                files: 'test/js/grunt/**/*.js',
                 tasks: ['jasmine'],
                 options: {
                     spawn: false,

@@ -43,11 +43,59 @@ Notes:
 
     1. If you used WebStorm, please setup coffee watch arguments like:
         --map --compile --output $ProjectFileDir$\test\spec\js $ProjectFileDir$\test\spec\coffee
-        
-TODOs:
 
-    1. using cucumberjs
+WebStorm Tips:
+
+    1. How to use WebStorm to do unit test using Karma
     
-    2. using sinon.js
+        WebStorm has Karma plugin installed and enabled by default.
+        What we need is just:
+            1. Create one karma.conf.js
+            2. Edit Karma debug configuration
+            
+        Initial karma.conf.js can be created using karma node module. Run "karma init" after Karma 
+        has been "npm -g install karma"
+        
+        Click F5 if you configure key map to match "Visual Studio". And debug configuration will
+        pop up. Then you can add Karma debug configuration and specify karma.conf.js as karma config
+        file.
+        
+    2. How to use WebStorm to do unit test using JSTestDriver
     
-    3. using deftjs for dependency injection
+        You need to have one jsTestDriver.conf file in your project directory.
+        Then you will see "View->Tool Windows->JsTestDriver Server.
+        Otherwise, it is not visible.
+        
+        It requires jasmine and jasmine-jstd-adapter (JasmineAdapter.js).
+        Searching on GitHub, I found it not supported. So stop investigating
+        how to run unit test in JsTestDriver using jasmine.
+        
+        Actually, it already let JsTestDriver run the unit test. Only because my spec has "describe"
+        which can only be recognized by jasmine. 
+        
+        The good thing for this is that it will list passed and failed test cases using tree in its
+        console window.
+        
+    3. How to use WebStorm to do unit test using grunt
+    
+        You will see "Tools -> Open Grunt Console" as long as you have an "Gruntfile.js".
+        In the grunt console window, you can select grunt task. If you config "grunt watch",
+        then it will keep watching changes and execute tests.
+        
+    4. How to use WebStorm to do unit test using mocha
+    
+        Mocha + Chai are just npm modules. 
+        Add one debug configuration using Mocha template. 
+        Specify the test directory and you can run it.
+        VisualStudio short cuts:
+            F5 for debug, Alt + Shjft + F10 for run.
+            For run run: Ctrl + F5, Alt + Shift + R
+            
+        The good part for Mocha is that it has test tree displayed.
+        
+Next Step:
+
+    1. how to use sinon.js
+    2. how to use deftjs
+    3. how to debug test cases
+    
