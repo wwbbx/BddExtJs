@@ -22,6 +22,9 @@ Prepare:
     2. install node modules
         npm install
         
+        if phantomjs is not installed within the bundle, please install it by:
+            npm install phantomjs
+        
     3. generate ext js 5 application
         sencha generate app BddExtJs ./BddExtJs
         

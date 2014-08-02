@@ -47,3 +47,6 @@ ext
 build
 bootstrap.js
 bootstrap.json
+
+# jasmine library
+jasmine

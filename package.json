@@ -1,0 +1,32 @@
+{
+  "name": "BddExtJs",
+  "version": "0.0.1",
+  "description": "node modules for BddExtJs",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt -vw jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wwbbx/BddExtJs.git"
+  },
+  "keywords": [
+    "jasmine",
+    "ext",
+    "js",
+    "5",
+    "spec"
+  ],
+  "author": "wwbbx",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jasmine": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "phantomjs": "^1.9.7-15"
+  }
+}
