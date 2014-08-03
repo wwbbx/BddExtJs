@@ -103,6 +103,9 @@ How to debug:
        Note that I setup breakpoint in js file rather than coffee file. I think I need
        coffee prepressor in karma.config.js and compile coffee with source map.
        
+       I did not figure out how to avoid let Karma using urlRoot/base/.
+       Karma will try to find http://localhost:9876/base/ext/... after I specified 
+       karma.config.js to load 'bootstrap.js' and 'bootstrap.json'.
         
 Next Step:
 
