@@ -98,6 +98,11 @@ How to debug:
     1. I can use JavaScript Debugger to host SpecRunner.html. It will use bootstrap.js to load
        ext js source code and application and test code.
        Then I can put "debugger" in test case to do the debugging.
+       
+    2. Using WebStorm Karma debug configuration, I can set breakpoint and do the debug.
+       Note that I setup breakpoint in js file rather than coffee file. I think I need
+       coffee prepressor in karma.config.js and compile coffee with source map.
+       
         
 Next Step:
 

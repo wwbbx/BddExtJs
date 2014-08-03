@@ -28,6 +28,8 @@
     "grunt-cli": "^0.1.13",
     "grunt-contrib-jasmine": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
+    "karma": "^0.12.19",
+    "karma-chrome-launcher": "^0.1.4",
     "phantomjs": "^1.9.7-15"
   }
 }
